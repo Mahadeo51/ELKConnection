@@ -18,7 +18,7 @@ public class JavaELK {
                 RestClient.builder(new HttpHost("localhost", 9200, "http")));
 
         SearchRequest searchRequest = new SearchRequest();
-        searchRequest.indices("sales-records");
+        searchRequest.indices("emp");
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.query(QueryBuilders.matchAllQuery());
         searchRequest.source(searchSourceBuilder);
