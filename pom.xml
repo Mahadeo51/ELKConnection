@@ -75,7 +75,7 @@
             <!--<artifactId>maven-jar-plugin</artifactId>-->
             <!--<version>3.1.0</version><configuration><archive><manifest><addClasspath>true</addClasspath><classpathPrefix>lib/</classpathPrefix><mainClass>JavaELKConnector</mainClass></manifest></archive></configuration></plugin></plugins></build>-->
 
-            <plugin> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-maven-plugin</artifactId> <executions> <execution> <goals> <goal>repackage</goal> </goals> <configuration> <classifier>spring-boot</classifier> <mainClass>JavaELKConnector</mainClass> </configuration> </execution> </executions> </plugin>
+            <plugin> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-maven-plugin</artifactId> <executions> <execution> <goals> <goal>repackage</goal> </goals> <configuration> <classifier>spring-boot</classifier> <mainClass>JavaELK</mainClass> </configuration> </execution> </executions> </plugin>
 
         </plugins>
     </build>
