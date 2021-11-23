@@ -39,6 +39,7 @@ public class JavaELK {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.exit(0);
     }
 
 }
