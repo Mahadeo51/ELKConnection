@@ -8,7 +8,8 @@ import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 
-import java.io.IOException;
+import javax.swing.*;
+import java.io.*;
 import java.util.Arrays;
 import java.util.Map;
 
