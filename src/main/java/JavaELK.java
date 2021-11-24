@@ -14,6 +14,10 @@ import java.util.Map;
 
 public class JavaELK {
     public static void main(String[] args){
+        
+        File csvFile =new File("output.csv");
+        PrintWriter out = new PrintWriter(csvFile);
+        
         RestHighLevelClient client = new RestHighLevelClient(
                 RestClient.builder(new HttpHost("localhost", 9200, "http")));
 
@@ -32,7 +36,10 @@ public class JavaELK {
                 for (SearchHit hit : searchHit) {
                     map = hit.getSourceAsMap();
                     System.out.println("map:"+Arrays.toString(map.entrySet().toArray()));
-
+                    
+                    //to save data in csv
+                    out.println(Arrays.toString(map.entrySet().toArray()));
+                    out.close();
 
                 }
             }
